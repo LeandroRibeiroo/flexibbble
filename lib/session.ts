@@ -54,7 +54,6 @@ export const authOptions: NextAuthOptions = {
 
         return newSession;
       } catch (error) {
-        console.log('Error retrieving user data: ', error);
         return Promise.reject(error);
       }
     },
@@ -74,7 +73,6 @@ export const authOptions: NextAuthOptions = {
 
         return true;
       } catch (error: any) {
-        console.log('Callback error: ', error);
         return false;
       }
     },
